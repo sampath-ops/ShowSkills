@@ -1,0 +1,37 @@
+.hero {
+  //   background-color: hsl(0, 0%, 98%);
+  @media (max-width: 991px) {
+    &_custom_flex {
+      display: flex;
+      justify-content: center !important;
+    }
+    &_summary {
+      margin-top: 35px !important;
+    }
+    &_custom_btn {
+      margin-top: 10px;
+    }
+  }
+
+  &__image {
+    background-image: url("/app/assets/hero.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 555px;
+    height: 485px;
+  }
+  &__company_name {
+    font-weight: 500;
+  }
+  &_summary {
+    font-weight: 400;
+    text-align: left;
+  }
+  &_custom_btn,
+  &_custom_btn:hover {
+    background-color: #7d3c98;
+    color: white;
+    width: 95px;
+    border-radius: 0px;
+  }
+}

@@ -44,4 +44,45 @@ html {
   font-weight: 700;
   border: none;
 }
+
+@media (max-width: 991px) {
+  .hero_custom_flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  .hero_summary {
+    margin-top: 35px !important;
+  }
+  .hero_custom_btn {
+    margin-top: 10px;
+  }
+}
+
+.hero__image {
+  background-image: url("/app/assets/hero.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 555px;
+  height: 485px;
+}
+
+.hero__company_name {
+  font-weight: 500;
+}
+
+.hero_summary {
+  font-weight: 400;
+  text-align: left;
+}
+
+.hero_custom_btn, .hero_custom_btn:hover {
+  background-color: #7d3c98;
+  color: white;
+  width: 95px;
+  border-radius: 0px;
+}
 /*# sourceMappingURL=style.css.map */
