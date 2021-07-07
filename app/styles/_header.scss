@@ -1,0 +1,27 @@
+.navbar-brand,
+.navbar-brand:hover,
+.nav-link {
+  color: #ba5ce2;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+}
+.nav-link:hover {
+  color: black;
+}
+.nav-link {
+  color: #7d3c98;
+  font-weight: 600;
+}
+.navbar-toggler,
+.navbar-toggler:focus {
+  box-shadow: none;
+  border: none;
+}
+.navbar-expand-sm .navbar-nav .nav-link {
+  padding: 15px;
+}
+.companyName {
+  font-weight: 700;
+  border: none;
+}
