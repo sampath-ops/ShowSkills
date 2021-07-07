@@ -1,0 +1,37 @@
+.services {
+  background-color: hsl(0, 0%, 98%);
+  &_custom_card {
+    color: #fff !important;
+    background-color: #7d3c98;
+    border-radius: 0px;
+    height: 100%;
+  }
+  &_custom_card:hover {
+    cursor: pointer;
+    box-shadow: 5px 5px 11px grey;
+  }
+  &_icons {
+    color: #ffff;
+  }
+  &_custom_row {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  &_custom_heading {
+    padding-top: 20px;
+  }
+  &_custom_body {
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 1rem 1rem;
+  }
+}
+// .col {
+//   flex: 1; /* additionally, equal width */
+//   background-color: #7d3c98;
+//   padding: 1em;
+
+// }

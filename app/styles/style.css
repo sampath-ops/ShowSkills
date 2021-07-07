@@ -70,6 +70,13 @@ html {
   height: 485px;
 }
 
+@media (max-width: 767px) {
+  .hero__image {
+    width: 450px;
+    height: 300px;
+  }
+}
+
 .hero__company_name {
   font-weight: 500;
 }
@@ -84,5 +91,51 @@ html {
   color: white;
   width: 95px;
   border-radius: 0px;
+}
+
+.services {
+  background-color: #fafafa;
+}
+
+.services_custom_card {
+  color: #fff !important;
+  background-color: #7d3c98;
+  border-radius: 0px;
+  height: 100%;
+}
+
+.services_custom_card:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 5px 5px 11px grey;
+          box-shadow: 5px 5px 11px grey;
+}
+
+.services_icons {
+  color: #ffff;
+}
+
+.services_custom_row {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.services_custom_heading {
+  padding-top: 20px;
+}
+
+.services_custom_body {
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+  padding: 1rem 1rem;
 }
 /*# sourceMappingURL=style.css.map */

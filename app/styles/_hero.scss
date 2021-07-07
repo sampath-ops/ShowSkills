@@ -20,6 +20,13 @@
     width: 555px;
     height: 485px;
   }
+  @media (max-width: 767px) {
+    &__image {
+      width: 450px;
+      height: 300px;
+    }
+  }
+
   &__company_name {
     font-weight: 500;
   }
