@@ -63,7 +63,7 @@ html {
 }
 
 .hero__image {
-  background-image: url("/app/assets/hero.png");
+  background-image: url("../../app/assets/hero.png");
   background-size: cover;
   background-repeat: no-repeat;
   width: 555px;
@@ -73,7 +73,16 @@ html {
 @media (max-width: 767px) {
   .hero__image {
     width: 450px;
-    height: 300px;
+    height: 395px;
+    background-size: 100% 100%;
+  }
+}
+
+@media (max-width: 374px) {
+  .hero__image {
+    width: 450px;
+    height: 325px;
+    background-size: 100% 100%;
   }
 }
 

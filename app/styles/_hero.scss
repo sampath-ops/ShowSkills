@@ -14,7 +14,7 @@
   }
 
   &__image {
-    background-image: url("/app/assets/hero.png");
+    background-image: url("../../app/assets/hero.png");
     background-size: cover;
     background-repeat: no-repeat;
     width: 555px;
@@ -23,7 +23,15 @@
   @media (max-width: 767px) {
     &__image {
       width: 450px;
-      height: 300px;
+      height: 395px;
+      background-size: 100% 100%;
+    }
+  }
+  @media (max-width: 374px) {
+    &__image {
+      width: 450px;
+      height: 325px;
+      background-size: 100% 100%;
     }
   }
 
