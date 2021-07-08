@@ -20,6 +20,10 @@ html {
   font-family: "Montserrat", sans-serif;
 }
 
+.nav-link:focus {
+  color: #7d3c98;
+}
+
 .nav-link:hover {
   color: black;
 }
@@ -45,6 +49,10 @@ html {
   border: none;
 }
 
+.hero_custom_btn {
+  margin-top: 33px;
+}
+
 @media (max-width: 991px) {
   .hero_custom_flex {
     display: -webkit-box;
@@ -63,11 +71,11 @@ html {
 }
 
 .hero__image {
-  background-image: url("../../app/assets/hero.png");
+  background-image: url("../../app/assets/Team page-amico.png");
   background-size: cover;
   background-repeat: no-repeat;
-  width: 555px;
-  height: 485px;
+  width: 492px;
+  height: 492px;
 }
 
 @media (max-width: 767px) {
@@ -102,6 +110,13 @@ html {
   border-radius: 0px;
 }
 
+.btn-check:focus + .btn,
+.btn:focus {
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .services {
   background-color: #fafafa;
 }
@@ -123,7 +138,11 @@ html {
   color: #ffff;
 }
 
-.services_custom_row {
+.services_custom_row_social_icons {
+  padding-top: 20px;
+}
+
+.services_custom_row_cards {
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -146,5 +165,81 @@ html {
           justify-content: space-between;
   height: 100%;
   padding: 1rem 1rem;
+}
+
+.services_social_icons_container {
+  text-align: center;
+  padding: 20px;
+}
+
+.services_social_icons {
+  color: grey;
+  font-size: 30px;
+}
+
+@media (max-width: 767px) {
+  .services_social_icons {
+    font-size: 25px;
+  }
+}
+
+.works_custom_images {
+  max-width: 85%;
+  -webkit-box-shadow: 0px 0px 24px 3px grey;
+          box-shadow: 0px 0px 24px 3px grey;
+}
+
+.works_heading {
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.works_custom_images {
+  max-width: 65%;
+  -webkit-box-shadow: 0px 0px 24px 3px grey;
+          box-shadow: 0px 0px 24px 3px grey;
+}
+
+.works_link {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+@media (min-width: 992px) {
+  .works_custom_images {
+    max-width: 65%;
+    -webkit-box-shadow: 0px 0px 24px 3px grey;
+            box-shadow: 0px 0px 24px 3px grey;
+  }
+}
+
+@media (max-width: 575px) {
+  .works_link {
+    padding-top: 0px !important;
+  }
+  .works_heading {
+    padding-top: 35px !important;
+    padding-bottom: 35px !important;
+  }
+}
+
+.highlight {
+  text-align: center;
+}
+
+.align {
+  padding-top: 85px !important;
+}
+
+@media (max-width: 767px) {
+  .align {
+    padding-top: 0px !important;
+  }
+}
+
+.know_more {
+  font-weight: 500;
+  color: grey;
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */

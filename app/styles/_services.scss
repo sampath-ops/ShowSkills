@@ -13,10 +13,14 @@
   &_icons {
     color: #ffff;
   }
-  &_custom_row {
+  &_custom_row_social_icons {
+    padding-top: 20px;
+  }
+  &_custom_row_cards {
     padding-top: 20px;
     padding-bottom: 20px;
   }
+
   &_custom_heading {
     padding-top: 20px;
   }
@@ -28,10 +32,17 @@
     height: 100%;
     padding: 1rem 1rem;
   }
+  &_social_icons_container {
+    text-align: center;
+    padding: 20px;
+  }
+  &_social_icons {
+    color: grey;
+    font-size: 30px;
+  }
+  @media (max-width: 767px) {
+    &_social_icons {
+      font-size: 25px;
+    }
+  }
 }
-// .col {
-//   flex: 1; /* additionally, equal width */
-//   background-color: #7d3c98;
-//   padding: 1em;
-
-// }

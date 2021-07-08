@@ -12,20 +12,25 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 
-
+   
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
 
     <!-- custom styles -->
     <link rel="stylesheet" href="app/styles/style.css">
+
+    <!-- preload the hero background image -->
+    <link rel="preload" href="../../app/assets/hero.png">
+
     <title>Portfolio</title>
   </head>
   <body>
 
+    <!-- navbar section -->
     <nav class="navbar navbar-expand-lg ">
       <div class="container d-flex justify-content-between">
         <a class="navbar-brand" href="#">COMPANYLOGO</i></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button style="padding-right: 0;" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fas fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" style='justify-content: flex-end' id="navbarSupportedContent">
@@ -49,7 +54,7 @@
 
     <!-- hero section -->
     <section class="hero">
-      <div class="container ">
+      <div class="container hero_custom_container ">
         <div class="row justify-content-between hero_custom_flex">
 
            <!-- company name -->
@@ -76,57 +81,120 @@
     <section class="services">
 
     <div class="container overflow-hidden">
-    <h4 class='services_custom_heading'>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h3>
-    <div class="row services_custom_row gy-5">
 
-      <div class="col-6 col-sm-3">
-          <!-- fullstack -->
-          <div class="card services_custom_card">
-            <div class="card-body services_custom_body">
-              <a href="#"><i class="fas fa-layer-group services_icons"></i></a>
-              <br>
-              Full Stack Web
-            </div>
+      <!-- social icons -->
+      <div class="container">
+        <div class="row  services_custom_row_social_icons">
+          <div class="col-3 services_social_icons_container">
+            <a href=""><i class="fab fa-linkedin-in services_social_icons"></i></a>
           </div>
-      </div>
-      
-      <div class="col-6 col-sm-3">
-          <!-- designing -->
-          <div class="card services_custom_card">
-            <div class="card-body services_custom_body"">
-              <a href="#"><i class="fas fa-palette services_icons"></i></a>
-              <br>
-              Logo Designs and Business cards
-            </div>
+          <div class="col-3 services_social_icons_container"> 
+            <a href=""><i class="fab fa-instagram services_social_icons"></i></a>
           </div>
+          <div class="col-3 services_social_icons_container">
+            <a href=""><i class="fab fa-facebook-f services_social_icons"></i></a>
+          </div>
+          <div class="col-3 services_social_icons_container">   
+            <a href=""><i class="fab fa-twitter services_social_icons"></i></a> 
+          </div>
+        </div>  
       </div>
 
-      <div class="col-6 col-sm-3">
-          <!-- game developing -->
+      <!-- services heading -->
+      <h4 class='services_custom_heading'>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h3>
+
+      <!-- cards-->
+      <div class="row services_custom_row_cards gy-5">
+
+        <div class="col-6 col-sm-3">
+            <!-- fullstack -->
+            <div class="card services_custom_card">
+              <div class="card-body services_custom_body">
+                <a href="#"><i class="fas fa-layer-group services_icons"></i></a>
+                <br>
+                Full Stack Web
+              </div>
+            </div>
+        </div>
+        
+        <div class="col-6 col-sm-3">
+            <!-- designing -->
+            <div class="card services_custom_card">
+              <div class="card-body services_custom_body"">
+                <a href="#"><i class="fas fa-palette services_icons"></i></a>
+                <br>
+                Logo Designs and Business cards
+              </div>
+            </div>
+        </div>
+
+        <div class="col-6 col-sm-3">
+            <!-- game developing -->
+            <div class="card services_custom_card">
+              <div class="card-body services_custom_body"">
+                <a href="#"><i class="fas fa-gamepad services_icons"></i></i></a>
+                <br>
+                
+                Small user base Games
+              </div>
+            </div>
+        </div>
+
+        <div class="col-6 col-sm-3">
+          <!-- app developing -->
           <div class="card services_custom_card">
             <div class="card-body services_custom_body"">
-              <a href="#"><i class="fas fa-gamepad services_icons"></i></i></a>
+              <a href="#"><i class="fas fa-laptop-code services_icons"></i></i></a>
               <br>
               
-              Small user base Games
+              Android native apps
             </div>
           </div>
+        </div>
+
       </div>
 
-      <div class="col-6 col-sm-3">
-        <!-- app developing -->
-        <div class="card services_custom_card">
-          <div class="card-body services_custom_body"">
-            <a href="#"><i class="fas fa-laptop-code services_icons"></i></i></a>
-            <br>
-            
-            Android native apps
+    </div>
+    </section>
+
+    <section class='works'>
+       
+      
+      <div class="container overflow-hidden">
+        <!-- Heading adn know more-->
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6">
+              <h4 class="display-5 py-5 works_heading">Our Recent Successfull Client Products</h4>
+            </div>
+            <div class="col-sm-6 py-5 works_link">
+             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, commodi?</p> <a href="#" class="know_more">Know more</a></div>
           </div>
+          
+        </div>
+       
+        <!-- cards for works  -->
+        <div class="row gy-5 works_custom_row_cards">
+
+          <div class="col-sm-6 works_boxes">
+           <div class="highlight p-3"><img class="works_custom_images img-fluid" src="../../app/assets/works/easybank.jpg" alt="work product"></div>
+          </div>  
+
+          <div class="col-sm-6 works_boxes" style="position: relative;">
+            <div  class="highlight align p-3"><img class="works_custom_images img-fluid" src="../../app/assets/works/easybank.jpg" alt="work product"></div>
+          </div>
+
+          <div class="col-sm-6 works_boxes">
+            <div class="highlight p-3"><img class="works_custom_images img-fluid" src="../../app/assets/works/easybank.jpg" alt="work product"></div>
+           </div>  
+ 
+           <div class="col-sm-6 works_boxes" style="position: relative;">
+             <div  class="highlight align p-3"><img class="works_custom_images img-fluid" src="../../app/assets/works/easybank.jpg" alt="work product"></div>
+           </div>
+ 
+
         </div>
       </div>
-
-    </div>
-    </div>
     </section>
     
       

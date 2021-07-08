@@ -1,5 +1,8 @@
 .hero {
   //   background-color: hsl(0, 0%, 98%);
+  &_custom_btn {
+    margin-top: 33px;
+  }
   @media (max-width: 991px) {
     &_custom_flex {
       display: flex;
@@ -14,11 +17,11 @@
   }
 
   &__image {
-    background-image: url("../../app/assets/hero.png");
+    background-image: url("../../app/assets/Team page-amico.png");
     background-size: cover;
     background-repeat: no-repeat;
-    width: 555px;
-    height: 485px;
+    width: 492px;
+    height: 492px;
   }
   @media (max-width: 767px) {
     &__image {
@@ -49,4 +52,10 @@
     width: 95px;
     border-radius: 0px;
   }
+}
+
+.btn-check:focus + .btn,
+.btn:focus {
+  outline: 0;
+  box-shadow: none;
 }
