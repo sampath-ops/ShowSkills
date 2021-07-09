@@ -1,41 +1,13 @@
 .hero {
   //   background-color: hsl(0, 0%, 98%);
+
   &_custom_btn {
     margin-top: 33px;
   }
-  @media (max-width: 991px) {
-    &_custom_flex {
-      display: flex;
-      justify-content: center !important;
-    }
-    &_summary {
-      margin-top: 35px !important;
-    }
-    &_custom_btn {
-      margin-top: 10px;
-    }
-  }
 
   &__image {
-    background-image: url("../../app/assets/Team page-amico.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 492px;
-    height: 492px;
-  }
-  @media (max-width: 767px) {
-    &__image {
-      width: 450px;
-      height: 395px;
-      background-size: 100% 100%;
-    }
-  }
-  @media (max-width: 374px) {
-    &__image {
-      width: 450px;
-      height: 325px;
-      background-size: 100% 100%;
-    }
+    max-width: 74%;
+    max-height: 100%;
   }
 
   &__company_name {
@@ -51,6 +23,67 @@
     color: white;
     width: 95px;
     border-radius: 0px;
+  }
+  @media (min-width: 320px) {
+    &__image {
+      max-width: 82%;
+      max-height: 100%;
+    }
+  }
+  @media (min-width: 375px) {
+    &__image {
+      max-width: 69%;
+      max-height: 100%;
+    }
+  }
+  @media (min-width: 425px) {
+    &__image {
+      max-width: 65%;
+      max-height: 100%;
+    }
+  }
+  @media (min-width: 768px) {
+    &__image {
+      max-width: 39%;
+      max-height: 100%;
+    }
+  }
+  @media (min-width: 769px) {
+    &__image {
+      max-width: 74%;
+      max-height: 100%;
+    }
+  }
+  @media (max-width: 991px) {
+    &_custom_flex {
+      display: flex;
+      justify-content: center !important;
+    }
+    &_summary {
+      margin-top: 35px !important;
+    }
+    &_custom_btn {
+      margin-top: 10px;
+    }
+    // &__image {
+    //   max-width: 80%;
+    //   max-height: 60%;
+    // }
+    &_custom_container {
+      padding-top: 50px;
+    }
+    &_image_box {
+      text-align: center;
+    }
+  }
+
+  @media (min-width: 992px) {
+    &_custom_container {
+      padding-top: 80px;
+    }
+    &_image_box {
+      text-align: end;
+    }
   }
 }
 

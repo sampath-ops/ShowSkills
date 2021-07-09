@@ -11,6 +11,28 @@ html {
           box-sizing: inherit;
 }
 
+.navbar_custom {
+  background-color: white;
+}
+
+@media (min-width: 992px) {
+  .navbar_custom_link::before {
+    content: "";
+    height: 5px;
+    background: -webkit-gradient(linear, left top, right top, from(#ff0099), to(#493240));
+    background: linear-gradient(to right, #ff0099, #493240);
+    display: block;
+    position: relative;
+    top: 31px;
+    opacity: 0;
+    -webkit-transition: opacity 300ms ease-in-out;
+    transition: opacity 300ms ease-in-out;
+  }
+  .navbar_custom_link:hover::before {
+    opacity: 1;
+  }
+}
+
 .navbar-brand,
 .navbar-brand:hover,
 .nav-link {
@@ -53,45 +75,9 @@ html {
   margin-top: 33px;
 }
 
-@media (max-width: 991px) {
-  .hero_custom_flex {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center !important;
-        -ms-flex-pack: center !important;
-            justify-content: center !important;
-  }
-  .hero_summary {
-    margin-top: 35px !important;
-  }
-  .hero_custom_btn {
-    margin-top: 10px;
-  }
-}
-
 .hero__image {
-  background-image: url("../../app/assets/Team page-amico.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 492px;
-  height: 492px;
-}
-
-@media (max-width: 767px) {
-  .hero__image {
-    width: 450px;
-    height: 395px;
-    background-size: 100% 100%;
-  }
-}
-
-@media (max-width: 374px) {
-  .hero__image {
-    width: 450px;
-    height: 325px;
-    background-size: 100% 100%;
-  }
+  max-width: 74%;
+  max-height: 100%;
 }
 
 .hero__company_name {
@@ -108,6 +94,73 @@ html {
   color: white;
   width: 95px;
   border-radius: 0px;
+}
+
+@media (min-width: 320px) {
+  .hero__image {
+    max-width: 82%;
+    max-height: 100%;
+  }
+}
+
+@media (min-width: 375px) {
+  .hero__image {
+    max-width: 69%;
+    max-height: 100%;
+  }
+}
+
+@media (min-width: 425px) {
+  .hero__image {
+    max-width: 65%;
+    max-height: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero__image {
+    max-width: 39%;
+    max-height: 100%;
+  }
+}
+
+@media (min-width: 769px) {
+  .hero__image {
+    max-width: 74%;
+    max-height: 100%;
+  }
+}
+
+@media (max-width: 991px) {
+  .hero_custom_flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  .hero_summary {
+    margin-top: 35px !important;
+  }
+  .hero_custom_btn {
+    margin-top: 10px;
+  }
+  .hero_custom_container {
+    padding-top: 50px;
+  }
+  .hero_image_box {
+    text-align: center;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero_custom_container {
+    padding-top: 80px;
+  }
+  .hero_image_box {
+    text-align: end;
+  }
 }
 
 .btn-check:focus + .btn,
