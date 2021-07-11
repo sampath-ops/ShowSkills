@@ -6,6 +6,9 @@
     border-radius: 0px;
     height: 100%;
   }
+  &_provide {
+    padding: 10px;
+  }
   &_custom_card:hover {
     cursor: pointer;
     box-shadow: 5px 5px 11px grey;
@@ -15,13 +18,29 @@
   }
   &_custom_row_social_icons {
     padding-top: 20px;
+    padding-bottom: 20px;
   }
   &_custom_row_cards {
     padding-top: 20px;
     padding-bottom: 20px;
   }
-
-  &_custom_heading {
+  &_heading {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 0px;
+    font-weight: 400;
+    font-size: 50px;
+  }
+  @media (max-width: 992px) {
+    &_heading {
+      text-align: center;
+      font-size: 30px;
+    }
+    &_custom_description {
+      text-align: center;
+    }
+  }
+  &_custom_description {
     padding-top: 20px;
   }
   &_custom_body {
@@ -46,5 +65,3 @@
     }
   }
 }
-
-
