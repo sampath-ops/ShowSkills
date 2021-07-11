@@ -4,11 +4,49 @@ html {
           box-sizing: border-box;
 }
 
+body {
+  position: relative;
+}
+
+html.loading {
+  height: 100%;
+  background-image: url("http://i.imgur.com/HEAhF9v.gif");
+  /* Animated loading spinner image */
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+html.loading body {
+  visibility: hidden;
+  height: 100%;
+  overflow: hidden;
+}
+
 *,
 *::before,
 *::after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
+}
+
+#services,
+#works {
+  padding-top: 20px;
+}
+
+@media (min-width: 992px) {
+  #services,
+  #works {
+    padding-top: 28px;
+  }
+}
+
+a.nav-link.navbar_custom_link.active {
+  color: black;
+}
+
+.navbar_custom_link::before {
+  opacity: 1;
 }
 
 .navbar_custom {
