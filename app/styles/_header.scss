@@ -2,14 +2,14 @@
   &_custom {
     background-color: white;
   }
-  @media (min-width: 992px) {
+  @media (min-width: 62rem) {
     &_custom_link::before {
       content: "";
-      height: 5px;
+      height: 0.3125rem;
       background: linear-gradient(to right, #ff0099, #493240);
       display: block;
       position: relative;
-      top: 31px;
+      top: 1.9375rem;
       opacity: 0;
       transition: opacity 300ms ease-in-out;
     }
@@ -45,7 +45,7 @@
   border: none;
 }
 .navbar-expand-sm .navbar-nav .nav-link {
-  padding: 15px;
+  padding: 0.9375rem;
 }
 .companyName {
   font-weight: 700;

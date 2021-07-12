@@ -5,25 +5,28 @@
   }
   &_heading {
     font-weight: 500;
-    font-size: 30px;
+    font-size: 1.875rem;
   }
   &_link {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
   }
-  @media (min-width: 992px) {
+  &_custom_row_cards {
+    margin-bottom: 0.9375rem;
+  }
+  @media (min-width: 62rem) {
     &_custom_images {
       max-width: 65%;
       box-shadow: 0px 0px 24px 3px grey;
     }
   }
-  @media (max-width: 575px) {
+  @media (max-width: 35.9375rem) {
     &_link {
       padding-top: 0px !important;
     }
     &_heading {
-      padding-top: 35px !important;
-      padding-bottom: 35px !important;
+      padding-top: 2.1875rem !important;
+      padding-bottom: 2.1875rem !important;
     }
   }
 }
@@ -32,9 +35,9 @@
 }
 
 .align {
-  padding-top: 85px !important;
+  padding-top: 5.3125rem !important;
 }
-@media (max-width: 767px) {
+@media (max-width: 47.9375rem) {
   .align {
     padding-top: 0px !important;
   }

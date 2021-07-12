@@ -1,0 +1,54 @@
+.container-xl {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.links {
+  i {
+    padding: 0.625rem;
+    padding-left: 0.0625rem;
+  }
+  padding-bottom: 0.875rem;
+}
+.part1 {
+  padding-bottom: 0.9375rem;
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+  p {
+    padding: 1.7rem;
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+}
+.part2 {
+  h1 {
+    padding-bottom: 2rem;
+  }
+}
+input {
+  padding: 0.625rem;
+  margin-bottom: 1.5625rem;
+  width: 18.75rem;
+}
+textarea {
+  padding: 0.625rem;
+  margin-bottom: 1.5625rem;
+  width: 18.75rem;
+}
+@media (max-width: 35.9375rem) {
+  .part1 {
+    p {
+      padding: 0.875rem;
+      padding-left: 0px;
+    }
+  }
+  input {
+    width: 15.625rem;
+  }
+  textarea {
+    width: 15.625rem;
+  }
+}

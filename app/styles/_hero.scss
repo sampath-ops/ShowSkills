@@ -2,7 +2,7 @@
   //   background-color: hsl(0, 0%, 98%);
 
   &_custom_btn {
-    margin-top: 33px;
+    margin-top: 2.0625rem;
   }
 
   &__image {
@@ -21,61 +21,61 @@
   &_custom_btn:hover {
     background-color: #7d3c98;
     color: white;
-    width: 95px;
+    width: 5.9375rem;
     border-radius: 0px;
   }
-  @media (min-width: 320px) {
+  @media (min-width: 20rem) {
     &__image {
       max-width: 82%;
       max-height: 100%;
     }
   }
-  @media (min-width: 375px) {
+  @media (min-width: 23.4375rem) {
     &__image {
       max-width: 69%;
       max-height: 100%;
     }
   }
-  @media (min-width: 425px) {
+  @media (min-width: 26.5625rem) {
     &__image {
       max-width: 65%;
       max-height: 100%;
     }
   }
-  @media (min-width: 768px) {
+  @media (min-width: 48rem) {
     &__image {
       max-width: 39%;
       max-height: 100%;
     }
   }
-  @media (min-width: 769px) {
+  @media (min-width: 48.0625rem) {
     &__image {
       max-width: 74%;
       max-height: 100%;
     }
   }
-  @media (max-width: 991px) {
+  @media (max-width: 61.9375rem) {
     &_custom_flex {
       display: flex;
       justify-content: center !important;
     }
     &_summary {
-      margin-top: 35px !important;
+      margin-top: 2.1875rem !important;
     }
     &_custom_btn {
-      margin-top: 10px;
+      margin-top: 0.625rem;
     }
     &_custom_container {
-      padding-top: 50px;
+      padding-top: 3.125rem;
     }
     &_image_box {
       text-align: center;
     }
   }
 
-  @media (min-width: 992px) {
+  @media (min-width: 62rem) {
     &_custom_container {
-      padding-top: 80px;
+      padding-top: 5rem;
     }
     &_image_box {
       text-align: end;
