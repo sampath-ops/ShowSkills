@@ -1,0 +1,57 @@
+.footer {
+  background-color: #ebdef0;
+  padding: 2.5rem;
+  &_service,
+  &_copy {
+    text-align: end;
+  }
+  &_grid {
+    font-weight: 600;
+  }
+  &_item {
+    padding: 10px;
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+  &_details {
+    display: flex;
+    justify-content: space-between;
+  }
+  &_icons_container a:not(:last-child) {
+    margin-right: 1rem;
+  }
+  &_icons_container {
+    font-size: 20px;
+  }
+  @media (max-width: 991px) {
+    &_grid {
+      display: block;
+      text-align: center;
+      div {
+        width: 100%;
+      }
+    }
+    &_details {
+      display: block;
+      a {
+        display: block;
+      }
+    }
+    &_service,
+    &_copy {
+      text-align: inherit;
+    }
+    &_item {
+      padding: 0px;
+    }
+    &_grid div:not(:last-child) {
+      padding-bottom: 10px;
+    }
+    &_about,
+    &_terms {
+      padding-bottom: 10px;
+    }
+  }
+}

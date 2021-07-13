@@ -4,17 +4,7 @@ html {
 }
 body {
   position: relative;
-}
-html.loading {
-  height: 100%;
-  background-image: url("http://i.imgur.com/HEAhF9v.gif"); /* Animated loading spinner image */
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-html.loading body {
-  visibility: hidden;
-  height: 100%;
-  overflow: hidden;
+  font-family: "Montserrat", sans-serif;
 }
 *,
 *::before,
@@ -37,4 +27,12 @@ a.nav-link.navbar_custom_link.active {
 }
 .navbar_custom_link::before {
   opacity: 1;
+}
+.attribution {
+  text-align: center;
+}
+.attribution a {
+  text-decoration: none;
+  font-size: 10px;
+  color: black;
 }

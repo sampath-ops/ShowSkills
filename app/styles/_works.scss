@@ -1,10 +1,11 @@
 .works {
+  font-weight: 600;
   &_custom_images {
     max-width: 85%;
     box-shadow: 0px 0px 15px 1px grey;
   }
   &_heading {
-    font-weight: 500;
+    font-weight: 600;
     font-size: 1.875rem;
   }
   &_link {
@@ -22,6 +23,10 @@
     }
     &_link {
       padding-top: 25px !important;
+    }
+    &_heading_container {
+      padding-left: 10px;
+      padding-right: 10px;
     }
   }
 
@@ -50,7 +55,6 @@
   }
 }
 .know_more {
-  font-weight: 500;
   color: grey;
   text-decoration: none;
 }

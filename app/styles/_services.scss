@@ -8,6 +8,7 @@
   }
   &_provide {
     padding: 0.625rem;
+    font-weight: 600;
   }
   &_custom_card:hover {
     cursor: pointer;
@@ -31,8 +32,12 @@
     padding-top: 1.5625rem;
     padding-bottom: 1.5625rem;
     margin-bottom: 0px;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 3.125rem;
+  }
+  &_custom_description {
+    padding-top: 1.25rem;
+    font-weight: 600;
   }
   @media (max-width: 61.9375rem) {
     &_heading {
@@ -49,9 +54,7 @@
       padding: 0;
     }
   }
-  &_custom_description {
-    padding-top: 1.25rem;
-  }
+
   &_custom_body {
     font-weight: 500;
     display: flex;
