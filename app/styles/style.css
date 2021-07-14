@@ -246,7 +246,7 @@ a.nav-link.navbar_custom_link.active {
 }
 
 .services_heading {
-  padding-top: 1.5625rem;
+  padding-top: 1.663rem;
   padding-bottom: 1.5625rem;
   margin-bottom: 0px;
   font-weight: 600;
@@ -536,6 +536,26 @@ textarea {
   }
   .footer_about, .footer_terms {
     padding-bottom: 10px;
+  }
+}
+
+.about {
+  padding-top: 50px;
+  font-weight: 600;
+}
+
+.about_heading {
+  font-weight: inherit;
+  margin-bottom: 18px;
+}
+
+@media (max-width: 575px) {
+  .about_heading {
+    padding-left: 8px;
+    padding-right: 12px;
+  }
+  .about p {
+    padding-left: 8px;
   }
 }
 /*# sourceMappingURL=style.css.map */
