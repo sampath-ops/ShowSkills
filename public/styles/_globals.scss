@@ -36,3 +36,11 @@ a.nav-link.navbar_custom_link.active {
   font-size: 10px;
   color: black;
 }
+.logo{
+  width: 35px;
+}
+@media(min-width:992px){
+  .logo{
+    width: 59px;
+  }
+}

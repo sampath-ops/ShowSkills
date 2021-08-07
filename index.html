@@ -13,22 +13,19 @@
 
    
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/bootstrap-5.0.2-dist/css/bootstrap.min.css">
 
     <!-- custom styles -->
-    <link rel="stylesheet" href="app/styles/style.css">
-
-    <!-- preload the hero image -->
-    <link rel="preload" href="../../app/assets/Team page-amico.png">
+    <link rel="stylesheet" href="/styles/style.css">
 
     <title>Crayosa</title>
   </head>
   <body>
-
+ 
     <!-- navbar section -->
     <nav id="main-nav" class="navbar navbar-expand-lg fixed-top navbar_custom">
       <div class="container d-flex justify-content-between">
-        <a class="navbar-brand" href="#home">COMPANYLOGO</i></a>
+        <a class="navbar-brand" href="#home"><img class="logo" src="/assets/logo.png" alt="crayOsa-logo"></i></a>
         <button style="padding-right: 0;" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fas fa-bars"></i>
         </button>
@@ -68,7 +65,7 @@
 
           <!-- hero image -->
           <div class="col-lg-8 hero_image_box">
-              <img src="./app/assets/Team page-amico.png"class="hero__image" alt="">
+              <img src="/assets/Team page-amico.png"class="hero__image" alt="">
           </div>
 
         </div>  
@@ -176,19 +173,19 @@
         <div class="row gy-5 works_custom_row_cards">
 
           <div class="col-6 works_boxes">
-           <div class="highlight p-3"><img class="works_custom_images img-fluid" src="./app/assets/works/easybank.jpg" alt="work product"></div>
+           <div class="highlight p-3"><img class="works_custom_images img-fluid" src="/assets/works/easybank.jpg" alt="work product"></div>
           </div>  
 
           <div class="col-6 works_boxes" style="position: relative;">
-            <div  class="highlight align p-3"><img class="works_custom_images img-fluid" src="./app/assets/works/easybank.jpg" alt="work product"></div>
+            <div  class="highlight align p-3"><img class="works_custom_images img-fluid" src="/assets/works/easybank.jpg" alt="work product"></div>
           </div>
 
           <div class="col-6 works_boxes">
-            <div class="highlight p-3"><img class="works_custom_images img-fluid" src="./app/assets/works/easybank.jpg" alt="work product"></div>
+            <div class="highlight p-3"><img class="works_custom_images img-fluid" src="/assets/works/easybank.jpg" alt="work product"></div>
            </div>  
  
            <div class="col-6 works_boxes" style="position: relative;">
-             <div  class="highlight align p-3"><img class="works_custom_images img-fluid" src="./app/assets/works/easybank.jpg" alt="work product"></div>
+             <div  class="highlight align p-3"><img class="works_custom_images img-fluid" src="/assets/works/easybank.jpg" alt="work product"></div>
            </div>
  
 
@@ -245,7 +242,7 @@
      <footer class="footer">
        <div class="container">
          <div class="row footer_grid">
-           <div class=" col-sm-4 footer_item"><a href="#home">logo</a></div>
+           <div class=" col-sm-4 footer_item"><a href="#home"><img class="logo" src="/assets/logo.png" alt="crayOsa-logo"></a></div>
            <div class=" col-sm-4 footer_item">
              <div class="footer_details">
                 <a href="#about" class="footer_about">About</a>
@@ -292,21 +289,6 @@
       crossorigin="anonymous"></script>
     <script>
       $('body').scrollspy({target:'#main-nav'})
-      //add smooth scrolling
-      // $("#main-nav a").on('click',function(e){
-      //   //check for a hash value
-      //   if(this.hash!==''){
-      //     //prevent default behavior
-      //     e.preventDefault();
-      //     //store hash value
-      //     const hash = this.hash;
-      //     $('html,body').animate({scrollTop:$(hash).offset().top
-      //     },100,function(){
-      //       //add hash to URL after scroll
-      //       window.location.hash = hash;
-      //     })
-      //   }  
-      // })
   
     </script>
 
