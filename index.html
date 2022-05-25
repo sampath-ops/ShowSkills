@@ -11,21 +11,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 
-   
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/public/bootstrap-5.0.2-dist/css/bootstrap.min.css">
 
     <!-- custom styles -->
-    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/public/styles/style.css">
 
-    <title>Crayosa</title>
+    <title>StartUp</title>
   </head>
   <body>
  
     <!-- navbar section -->
     <nav id="main-nav" class="navbar navbar-expand-lg fixed-top navbar_custom">
       <div class="container d-flex justify-content-between">
-        <a class="navbar-brand" href="#home"><img class="logo" src="/assets/logo.png" alt="crayOsa-logo"></i></a>
+        <a class="navbar-brand" href="#home"><img class="logo" src="/public/assets/logo.png" alt="crayOsa-logo"></i></a>
         <button style="padding-right: 0;" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fas fa-bars"></i>
         </button>
@@ -56,7 +55,7 @@
            <!-- company name -->
            <div class="col-lg-4">
             <h1 class="display-1  hero__company_name">
-              crayOsa
+              StartUp
             </h1>
             <p  class="hero_summary mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quae blanditiis dolores a nisi vitae, vel suscipit nam cupiditate? Laudantium?</p>
 
@@ -65,7 +64,7 @@
 
           <!-- hero image -->
           <div class="col-lg-8 hero_image_box">
-              <img src="/assets/Team page-amico.png"class="hero__image" alt="">
+              <img src="/public/assets/Team page-amico.png"class="hero__image" alt="">
           </div>
 
         </div>  
@@ -173,19 +172,19 @@
         <div class="row gy-5 works_custom_row_cards">
 
           <div class="col-6 works_boxes">
-           <div class="highlight p-3"><img class="works_custom_images img-fluid" src="/assets/works/easybank.jpg" alt="work product"></div>
+           <div class="highlight p-3"><img class="works_custom_images img-fluid" src="/public/assets/works/easybank.jpg" alt="work product"></div>
           </div>  
 
           <div class="col-6 works_boxes" style="position: relative;">
-            <div  class="highlight align p-3"><img class="works_custom_images img-fluid" src="/assets/works/easybank.jpg" alt="work product"></div>
+            <div  class="highlight align p-3"><img class="works_custom_images img-fluid" src="/public/assets/works/easybank.jpg" alt="work product"></div>
           </div>
 
           <div class="col-6 works_boxes">
-            <div class="highlight p-3"><img class="works_custom_images img-fluid" src="/assets/works/easybank.jpg" alt="work product"></div>
+            <div class="highlight p-3"><img class="works_custom_images img-fluid" src="/public/assets/works/easybank.jpg" alt="work product"></div>
            </div>  
  
            <div class="col-6 works_boxes" style="position: relative;">
-             <div  class="highlight align p-3"><img class="works_custom_images img-fluid" src="/assets/works/easybank.jpg" alt="work product"></div>
+             <div  class="highlight align p-3"><img class="works_custom_images img-fluid" src="/public/assets/works/easybank.jpg" alt="work product"></div>
            </div>
  
 
@@ -208,7 +207,7 @@
         <div class="row " >
           <div class="col-sm-6 part1 ">
             <h4 class="display-5 contact_heading" style="margin-bottom: 0px;">Let's Connect </h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore magnam quibusdam officia hic! Iste hic unde totam accusantium, dicta, maiores a quam natus provident quasi ipsam maxime facere sequi esse?</p>
+            <p>Your website is the center of your digital ecosystem, like a brick and mortar location, the experience matters once a customer enters, just as much as the perception they have of you before they walk through the door.</p>
            
             <div class="links">
               <a href="#"><i class="fas fa-clipboard-check"></i></a>
@@ -220,20 +219,15 @@
            </div>
            <div class="col-sm-6 part2">
             <h4 class="display-5 contact_heading">Let's message us and make something together!</h4>
-            <div class="inputs">
-            <input type="text" id="fname" name="name" placeholder="Your name..." ><br>
+            <form class="inputs">
+            <input type="text" id="fname" name="name" placeholder="Your name..." required><br>
   
-            <input type="email" id="email" name="email" placeholder="Your email..."  ><br>
-            <textarea name="details" id="details" cols="30" rows="5" placeholder="Project details..." ></textarea><br> 
-            <!-- <input type="text" id="details" name="details" placeholder="Project details..."  ><br> -->
-  
+            <input type="email" id="email" name="email" placeholder="Your email..."  required><br>
+            <textarea name="details" id="details" cols="30" rows="5" placeholder="Project details..." required></textarea><br> 
             <button type="submit" id="submit" class="btn btn-dark custom_btn">Submit</button>
-           </div>
+            </form>
   
           </div>
-  
-          
-  
         </div>
       </div>
   
@@ -264,7 +258,7 @@
               <a href="#works">Works</a>
            </div>
           </div>
-           <div class=" col-sm-4 footer_item footer_copy" > &copy; crayOsa. All rights reserved</div>
+           <div class=" col-sm-4 footer_item footer_copy" > &copy; Startup. All rights reserved</div>
          </div>
        </div>
      </footer>
@@ -274,10 +268,6 @@
       <a href="https://storyset.com/business">Business illustrations by Storyset</a>
     </div>
     
-
-   <!-- Option 1: Bootstrap Bundle with Popper
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
-
    <!-- Option 2: Separate Popper and Bootstrap JS -->
    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
    crossorigin="anonymous"></script>
@@ -289,7 +279,6 @@
       crossorigin="anonymous"></script>
     <script>
       $('body').scrollspy({target:'#main-nav'})
-  
     </script>
 
   </body>
